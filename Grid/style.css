@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    margin:30px
+}
+.layout{
+    display:grid;
+    grid-template-columns:1fr 2fr 1fr;
+    grid-template-rows: 60px 1fr 1fr 40px;
+    gap: 30px;
+}
+.layout > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.layout > div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.header, .footer{
+    grid-column: 1 / -1;
+    text-align: center;
+}
+.header{
+    background-color: blueviolet;
+}
+.footer{
+    background-color: pink;
+}
